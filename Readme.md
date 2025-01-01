@@ -1,6 +1,9 @@
 [text](https://medium.com/@ayogun/push-swap-c1f5d2d41e97)
 text
 
+[text](https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a)
+text
+
 ---
 
 # test 2 value random :
