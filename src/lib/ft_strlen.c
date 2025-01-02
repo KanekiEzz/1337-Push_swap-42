@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iezzam <iezzam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 08:08:53 by iezzam            #+#    #+#             */
-/*   Updated: 2025/01/02 23:06:36 by iezzam           ###   ########.fr       */
+/*   Created: 2024/12/31 11:37:35 by iezzam            #+#    #+#             */
+/*   Updated: 2024/12/31 11:37:42 by iezzam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-int	main(int ac, char **av)
+size_t	ft_strlen(const char *s)
 {
-	t_stack	*stack_a;
-	t_stack	*stack_b;
+	size_t	i;
 
-	stack_a = NULL;
-	stack_b = NULL;
-	if (ac == 1)
-		return (0);
-	if (ac == 2 && av[1][0] == '\0')
-		(ft_printf("\033[0;31mError\n\033[0m"), exit(EXIT_FAILURE));
-	stack_a = valid_parse(ac, av);
-	if (stack_not_sorted(&stack_a))
-	{
-		move_to_b(&stack_a, &stack_b, 0, 0);
-		move_back_to_a(&stack_a, &stack_b);
-	}
-	free_stack(&stack_a);
-	return (0);
+	i = 0;
+	while (s[i++] != '\0')
+		;
+	return (--i);
 }

@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iezzam <iezzam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 08:08:53 by iezzam            #+#    #+#             */
-/*   Updated: 2025/01/02 23:06:36 by iezzam           ###   ########.fr       */
+/*   Created: 2025/01/02 20:19:52 by iezzam            #+#    #+#             */
+/*   Updated: 2025/01/02 23:03:26 by iezzam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "../../../includes/push_swap.h"
 
-int	main(int ac, char **av)
+int	ft_strncmp(char *s1, char *s2, int n)
 {
-	t_stack	*stack_a;
-	t_stack	*stack_b;
+	unsigned char	*ss1;
+	unsigned char	*ss2;
+	int				i;
 
-	stack_a = NULL;
-	stack_b = NULL;
-	if (ac == 1)
-		return (0);
-	if (ac == 2 && av[1][0] == '\0')
-		(ft_printf("\033[0;31mError\n\033[0m"), exit(EXIT_FAILURE));
-	stack_a = valid_parse(ac, av);
-	if (stack_not_sorted(&stack_a))
+	ss1 = (unsigned char *)s1;
+	ss2 = (unsigned char *)s2;
+	i = 0;
+	while ((ss1[i] || ss2[i]) && i < n)
 	{
-		move_to_b(&stack_a, &stack_b, 0, 0);
-		move_back_to_a(&stack_a, &stack_b);
+		if (ss1[i] != ss2[i])
+			return (ss1[i] - ss2[i]);
+		i++;
 	}
-	free_stack(&stack_a);
 	return (0);
 }

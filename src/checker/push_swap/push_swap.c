@@ -6,11 +6,16 @@
 /*   By: iezzam <iezzam@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 08:08:53 by iezzam            #+#    #+#             */
-/*   Updated: 2025/01/02 23:06:36 by iezzam           ###   ########.fr       */
+/*   Updated: 2025/01/02 13:11:58 by iezzam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
+
+void	f(void)
+{
+	system("leaks push_swap");
+}
 
 int	main(int ac, char **av)
 {
