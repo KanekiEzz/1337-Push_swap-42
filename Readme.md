@@ -124,6 +124,8 @@ ARG="-159 2 -1598 5 -6"; ./push_swap $ARG | ./checker $ARG
 ---
 
 ### 📚 Additional Resources
+
+- [📝 Pdf Push_swap](https://github.com/KanekiEzz/1337-Push_swap-42/blob/main/public/push_swap.pdf) 
 - [Push_Swap Explanation by Ayogun](https://medium.com/@ayogun/push-swap-c1f5d2d41e97)
 - [Push_Swap Strategies by Jamie Dawson](https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a)
 
