@@ -3,7 +3,7 @@ NAMEB = checker
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 INC = ./mandatory/includes/push_swap.h
-INCB = ./bouns/includes/push_swap.h
+INCB = ./bonus/includes/push_swap.h
 RM = rm -f
 
 SRCS =	./mandatory/src/push_swap.c \
@@ -30,30 +30,30 @@ SRCS =	./mandatory/src/push_swap.c \
 		./mandatory/printf/src/ft_putstr.c\
 		./mandatory/printf/src/ft_convert_base_p.c\
 
-SRCSB =	./bouns/src/push_swap_checker.c \
-		./bouns/src/push_swap/valid_parse.c \
-		./bouns/src/push_swap/push_utils.c \
-		./bouns/src/push_swap/stack_utils.c \
-		./bouns/src/push_swap/error_handling.c \
-		./bouns/src/push_swap/abr/push_a_b.c \
-		./bouns/src/push_swap/abr/reverse_a_b_r.c \
-		./bouns/src/push_swap/abr/reverse_rotate_a_b_r.c \
-		./bouns/src/push_swap/abr/swap_a_b_ss.c \
-		./bouns/src/lib/ft_atol.c \
-		./bouns/src/lib/utils.c \
-		./bouns/src/lib/ft_isdigit.c \
-		./bouns/src/lib/ft_split.c \
-		./bouns/src/lib/ft_strjoin.c \
-		./bouns/src/lib/ft_strlen.c \
-		./bouns/src/lib/ft_strncmp.c \
-		./bouns/printf/ft_printf.c \
-		./bouns/printf/src/ft_putchar.c\
-		./bouns/printf/src/ft_putnbr.c\
-		./bouns/printf/src/ft_convert_base.c\
-		./bouns/printf/src/ft_putstr.c\
-		./bouns/printf/src/ft_convert_base_p.c\
-		./bouns/line/get_next_line.c\
-		./bouns/line/get_next_line_utils.c\
+SRCSB =	./bonus/src/push_swap_checker.c \
+		./bonus/src/push_swap/valid_parse.c \
+		./bonus/src/push_swap/push_utils.c \
+		./bonus/src/push_swap/stack_utils.c \
+		./bonus/src/push_swap/error_handling.c \
+		./bonus/src/push_swap/abr/push_a_b.c \
+		./bonus/src/push_swap/abr/reverse_a_b_r.c \
+		./bonus/src/push_swap/abr/reverse_rotate_a_b_r.c \
+		./bonus/src/push_swap/abr/swap_a_b_ss.c \
+		./bonus/src/lib/ft_atol.c \
+		./bonus/src/lib/utils.c \
+		./bonus/src/lib/ft_isdigit.c \
+		./bonus/src/lib/ft_split.c \
+		./bonus/src/lib/ft_strjoin.c \
+		./bonus/src/lib/ft_strlen.c \
+		./bonus/src/lib/ft_strncmp.c \
+		./bonus/printf/ft_printf.c \
+		./bonus/printf/src/ft_putchar.c\
+		./bonus/printf/src/ft_putnbr.c\
+		./bonus/printf/src/ft_convert_base.c\
+		./bonus/printf/src/ft_putstr.c\
+		./bonus/printf/src/ft_convert_base_p.c\
+		./bonus/line/get_next_line.c\
+		./bonus/line/get_next_line_utils.c\
 
 OBJS = $(SRCS:.c=.o)
 OBJSB = $(SRCSB:.c=.o)
@@ -61,7 +61,7 @@ OBJSB = $(SRCSB:.c=.o)
 mandatory/%.o: mandatory/%.c ${INC}
 	${CC} ${FLAGS} -c $< -o $@
 
-bouns/%.o: bouns/%.c ${INCB}
+bonus/%.o: bonus/%.c ${INCB}
 	${CC} ${FLAGS} -c $< -o $@
 
 ${NAME}: ${OBJS}
