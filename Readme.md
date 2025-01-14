@@ -1,5 +1,5 @@
 
-<h1 align="center">1337🇲🇦_Push_Swap-Tutorial 🖥🇬🇧 - 42 Kaneki</h1>
+<h1 align="center">1337🇲🇦_Push_Swap-Tutorial_🇬🇧 - 42 Kaneki</h1>
 <p align="center">
   <a href="https://github.com/KanekiEzz/1337_Born2beroot_42">
     <img src="https://raw.githubusercontent.com/KanekiEzz/kaneki_badges/refs/heads/main/push_swapm.png" alt="42 Badge">
